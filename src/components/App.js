@@ -4,8 +4,12 @@ import pokemons from "../data/data.json";
 import PokeList from "./PokeList";
 
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { data: pokemons };
+  }
   render() {
-    return <PokeList pokemons={pokemons} />;
+    return <PokeList pokemons={this.state.data} />;
   }
 }
 
