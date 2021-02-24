@@ -12,8 +12,9 @@ class PokeList extends React.Component {
       );
     });
     return (
-      <div>
-        <ul>{item}</ul>
+      <div className='page'>
+        <h1 className='page-title'>Mi lista de pokemon</h1>
+        <ul className='page-list'>{item}</ul>
       </div>
     );
   }
